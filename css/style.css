@@ -1,17 +1,217 @@
 *, *::before, *::after {
-    -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-body {
-    margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
+}
+
+:root {
+  --basic-gray: #eeeeee;
+  --basic-white: #ffffff;
+  --basic-black: #000000;
+  --main-text-black: #283136;
+  --basic-light-black: #444444;
+  --basic-red: #FB565A;
+  --basic-red-darken: #E74246;
+  --basic-red-dark: #D7373B;
+  --link-active-gray: rgba(0, 0, 0, 0.3);
+  --basic-green: #00CA74;
+  --basic-green-darken: #00BC6C;
+  --basic-green-dark: #00AA62;
+  --basic-yellow: #EFC84A;
+  --basic-yellow-darken: #EAB534;
+  --basic-yellow-dark: #E5A722;
+  --basic-white-opacity: rgba(255, 255, 255, 0.3);
+  --text-gray: #666666;
+}
+
+body {
+  min-width: 1440px;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: normal;
+  color: var(--main-text-black);
+}
+
+.main__navigation {
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--basic-black);
+  background-color: var(--basic-gray);
+}
+
+.site__navigation {
+  list-style: none;
+}
+
+.site__navigation a, .cart {
+  color: var(--basic-black);
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.site-navigation-current a:not([href]) {
+  border-bottom: 2px solid var(--basic-red);
+}
+
+.site__navigation a:hover, .site__navigation a:focus, .cart:hover, .cart:focus {
+  color: var(--basic-red);
+}
+
+.site__navigation a:active, .cart:active {
+  color: var(--link-active-gray);
+}
+
+.promo {
+  background-color: var(--basic-gray);
+}
+
+.promo__title {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+  color: var(--basic-black);
+}
+
+.services__list {
+  list-style: none;
+}
+
+.services__name {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+.about__description-title {
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 45px;
+  color: var(--basic-black);
+}
+
+.about__description__list-title {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.about__description-list {
+  list-style: none;
+}
+
+.statistics__list-title {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+.statistics__list, .products__list, .social__btn {
+  list-style: none;
+}
+
+.btn {
+  font: inherit;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  border: none;
+  color: var(--basic-white);
+  border-radius: 3px;
+  border: none;
+}
+
+.btn-red {
+  background-color: var(--basic-red);
+}
+
+.btn-green {
+  background-color: var(--basic-green);
+}
+
+.btn-yellow {
+  background-color: var(--basic-yellow);
+}
+
+.btn-red:hover, .btn-red:focus {
+  background-color: var(--basic-red-darken);
+}
+
+.btn-green:hover, .btn-green:focus {
+  background-color: var(--basic-green-darken);
+}
+
+.btn-yellow:hover, .btn-yellow:focus {
+  background-color: var(--basic-yellow-darken);
+}
+
+.btn-red:active {
+  background-color: var(--basic-red-dark);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  color: var(--basic-white-opacity);
+}
+
+.btn-green:active {
+  background-color: var(--basic-green-dark);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  color: var(--basic-white-opacity);
+}
+
+.btn-yellow:active {
+  background-color: var(--basic-yellow-dark);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  color: var(--basic-white-opacity);
+}
+
+.contacts__title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+.contacts__data, .contacts__data a {
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--text-gray);
+}
+
+.discount b {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+  color: var(--basic-black);
+}
+
+.discount p {
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--basic-light-black);
+}
+
+.visually-hidden {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0 !important;
+	border:0 !important;
+	height: 1px !important;
+	width: 1px !important;
+	overflow: hidden;
 }
