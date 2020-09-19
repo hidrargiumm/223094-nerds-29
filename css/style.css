@@ -30,6 +30,8 @@ a {
   --basic-yellow-dark: #E5A722;
   --basic-white-opacity: rgba(255, 255, 255, 0.3);
   --text-gray: #666666;
+  --basic-light-gray: #e1e1e1;
+  --basic-shadow: rgba(0, 1, 1, 0.1);
 }
 
 body {
@@ -41,6 +43,13 @@ body {
   line-height: 24px;
   font-weight: normal;
   color: var(--main-text-black);
+}
+
+.header__container {
+  display: grid;
+  margin: 0 auto;
+  max-width: 1440px;
+
 }
 
 .main__navigation {
@@ -72,11 +81,15 @@ body {
   color: var(--link-active-gray);
 }
 
-.promo {
+.slider {
   background-color: var(--basic-gray);
 }
 
-.promo__title {
+.slider__list {
+  list-style: none;
+}
+
+.slide__title {
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
@@ -126,6 +139,7 @@ body {
 }
 
 .btn {
+  display: inline-block;
   font: inherit;
   text-align: center;
   vertical-align: middle;
@@ -134,6 +148,17 @@ body {
   color: var(--basic-white);
   border-radius: 3px;
   border: none;
+  height: 50px;
+  width: 160px;
+  line-height: 50px;
+}
+
+.promo__bnt {
+  width: 240px;
+}
+
+.contacts-btn {
+  width: 219px;
 }
 
 .btn-red {
@@ -162,19 +187,19 @@ body {
 
 .btn-red:active {
   background-color: var(--basic-red-dark);
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  box-shadow: inset 0px 3px 0px var(--basic-shadow);
   color: var(--basic-white-opacity);
 }
 
 .btn-green:active {
   background-color: var(--basic-green-dark);
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  box-shadow: inset 0px 3px 0px var(--basic-shadow);
   color: var(--basic-white-opacity);
 }
 
 .btn-yellow:active {
   background-color: var(--basic-yellow-dark);
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  box-shadow: inset 0px 3px 0px var(--basic-shadow);
   color: var(--basic-white-opacity);
 }
 
@@ -192,6 +217,34 @@ body {
   color: var(--text-gray);
 }
 
+.social__btn li {
+  display: inline-block;
+}
+
+.social__btn a {
+  display: inline-block;
+  width: 81px;
+  height: 81px;
+  background-color: var(--basic-light-gray);
+  text-align: center;
+  border-radius: 50%;
+  vertical-align: middle;
+  line-height: 80px;
+}
+
+.social__btn img {
+  vertical-align: middle;
+}
+
+.social__btn a:focus, .social__btn a:hover {
+  background-color: var(--basic-red-darken);
+}
+
+.social__btn a:active {
+  background-color: var(--basic-red-dark);
+  box-shadow: inset 0px 3px 0px var(--basic-shadow);
+}
+
 .discount b {
   font-weight: bold;
   font-size: 36px;
@@ -206,12 +259,13 @@ body {
 }
 
 .visually-hidden {
-	position: absolute !important;
-	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-	clip: rect(1px, 1px, 1px, 1px);
-	padding:0 !important;
-	border:0 !important;
-	height: 1px !important;
-	width: 1px !important;
-	overflow: hidden;
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
 }
