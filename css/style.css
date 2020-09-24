@@ -47,8 +47,18 @@ a {
   overflow: hidden;
 }
 
+.page {
+  height: 100%;
+}
+
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
+
 body {
-  min-width: 1440px;
   margin: 0;
   padding: 0;
   font-family: "Roboto", Arial, sans-serif;
@@ -373,7 +383,6 @@ body {
   padding: 0;
   display: flex;
   /* justify-content: space-between; */
-
 }
 
 .social__btn li+li {
