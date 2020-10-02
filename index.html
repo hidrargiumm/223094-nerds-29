@@ -57,17 +57,17 @@
         <h2 class="visually-hidden">Услуги</h2>
         <ul class="services__list">
           <li>
-            <h3 class="services__name">Веб-сайты</h3>
+            <h3 class="services__name services__website">Веб-сайты</h3>
             <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
             <a href=" " class="order-btn btn btn-red">Заказать</a>
           </li>
           <li>
-            <h3 class="services__name">Приложения</h3>
+            <h3 class="services__name services__apps">Приложения</h3>
             <p>Покорите топ-10 приложений в AppStore и Google Play</p>
             <a href=" " class="order-btn btn btn-green">Заказать</a>
           </li>
           <li>
-            <h3 class="services__name">Презентации</h3>
+            <h3 class="services__name services__presentations">Презентации</h3>
             <p>Вы даже не подозреваете, насколько вы изумительны!</p>
             <a href=" " class="order-btn btn btn-yellow">Заказать</a>
           </li>
@@ -91,36 +91,35 @@
           <p class="statistics__list-title">с 2004 года Любим точность во всем:</p>
           <ul class="statistics__list">
             <li>
-              <p>
-                <b>146</b><span>%</span>
-                Уровень самоотдачи
-              </p>
+
+              <b>146</b><span>%</span>
+              <p>Уровень<br>самоотдачи</p>
             </li>
             <li>
-              <p>
-                <b>100</b><span>%</span>
-                Соблюдение сроков
-              </p>
+
+              <b>100</b><span>%</span>
+              <p>Соблюдение<br>сроков</p>
             </li>
             <li>
-              <p>
-                <b>50</b><span>%</span>
-                Минимальная предоплата
-              </p>
+
+              <b>50</b><span>%</span>
+              <p>Минимальная<br>предоплата</p>
             </li>
           </ul>
         </div>
       </section>
-      <section class="companies">
+      <section class="products">
         <h2 class="visually-hidden">Продукты</h2>
         <ul class="products__list">
-          <li><a href="#"><img src="img/html_academy_logo.png" width="199" height="67.82"
+          <li><a class="products__list-item" href="#"><img src="img/html_academy_logo.png" width="199" height="67.82"
                 alt="Логотип HTML Academy"></a>
           </li>
-          <li><a href="#"><img src="img/barbershop_borodinski_logo.png" width="209" height="90"
-                alt="Логотип Барбершопа Бородинский"></a></li>
-          <li><a href="#"><img src="img/pink_logo.png" width="185" height="52" alt="Логотип Pink"></a></li>
-          <li><a href="#"><img src="img/mishka_logo.png" width="173" height="84" alt="Логотип Mishka"></a></li>
+          <li><a class="products__list-item" href="#"><img src="img/barbershop_borodinski_logo.png" width="209"
+                height="90" alt="Логотип Барбершопа Бородинский"></a></li>
+          <li><a class="products__list-item" href="#"><img src="img/pink_logo.png" width="185" height="52"
+                alt="Логотип Pink"></a></li>
+          <li><a class="products__list-item" href="#"><img src="img/mishka_logo.png" width="173" height="84"
+                alt="Логотип Mishka"></a></li>
         </ul>
       </section>
     </div>
@@ -129,8 +128,8 @@
         <div class="contacts__info">
           <p class="contacts__title"><b>NЁRDS DESIGN STUDIO</b></p>
           <div class="contacts__data">
-            <p>191186, Санкт-Петербург, <br>ул. Б. Конюшенная, д. 19/8<br>
-              тел. <a href="tel:+78122757575"> +7 (812) 275-75-75</a></p>
+            <p>191186, Санкт-Петербург, <br>ул. Б. Конюшенная, д. 19/8</p>
+            <p class="contacts__tel"> тел. <a href="tel:+78122757575"> +7 (812) 275-75-75</a></p>
           </div>
           <a class="contacts-btn btn btn-red" href="#">Напишите нам</a>
         </div>
@@ -154,7 +153,8 @@
                     fill="#fff" /></svg>
               </a>
             </li>
-            <li class="facebook__btn"><a href="#">
+            <li class="facebook__btn">
+              <a href="#">
                 <span class="visually-hidden">Фейсбук</span>
                 <svg width="12" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M12 4V0H8a4 4 0 00-4 4v4H0v4h4v10h4V12h4V8H8V4h4z" fill="#fff" /></svg>
