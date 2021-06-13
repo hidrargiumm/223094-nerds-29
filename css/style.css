@@ -129,7 +129,7 @@ body {
 }
 
 .cart::before {
-  content: " ";
+  content: "";
   position: absolute;
   width: 15px;
   height: 15px;
