@@ -1,7 +1,7 @@
 # Учебный проект «Нёрдс»
 ## Ссылка
 
-[Ссылка проекта на GitHub Pages](https://mtokmin.github.io/travel_in_Russia/)
+[Ссылка проекта на GitHub Pages](https://mtokmin.github.io/223094-nerds-29/)
 
 ## Скриншот
 
@@ -19,6 +19,3 @@
 **Токмин Михаил**
 
 telegram: [@hidrargium](https://t.me/hidrarguim)
-* Михаил Токмин 
-* Практика верстки
-* Ссылка на проект https://mtokmin.github.io/223094-nerds-29/
