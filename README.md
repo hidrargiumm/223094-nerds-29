@@ -5,7 +5,7 @@
 
 ## Скриншот
 
-![Desktop screenshot](./screenshot/Screenshot.png)
+![Desktop screenshot](./Screenshot.png)
 
 ## Используемые технологии
 
